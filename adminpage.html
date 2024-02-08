@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circular Progress Bar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <style>
+      body {
+        height: 100vh;
+        background: linear-gradient(#06111b 50%, #4d5bf9 50%);
+      }
+      .card {
+        background-color: transparent !important;
+        border: none !important;
+      }
+
+      .circular-progress {
+        position: relative;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+      }
+
+      .circular-progress:before {
+        content: "";
+        position: absolute;
+        height: 84%;
+        width: 84%;
+          background-color: #ffffff;
+        border-radius: 50%;
+      }
+
+      .value-container {
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        font-size: 30px;
+        color: #231c3d;
+      }
+      .circular-progress1 {
+        position: relative;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+      }
+
+      .circular-progress1:before {
+        content: "";
+        position: absolute;
+        height: 84%;
+        width: 84%;
+        background-color: #ffffff;
+        border-radius: 50%;
+      }
+
+      .value-container1 {
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        font-size: 30px;
+        color: #231c3d;
+      }
+      .circular-progress2 {
+        position: relative;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+      }
+
+      .circular-progress2:before {
+        content: "";
+        position: absolute;
+        height: 84%;
+        width: 84%;
+        background-color: #ffffff;
+        border-radius: 50%;
+      }
+
+      .value-container2 {
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        font-size: 30px;
+        color: #231c3d;
+      }
+
+    </style>
+  </head>
+  <body>
+    <br>
+    <h1 style="color: white;"><center>ADMIN PAGE</center></h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="card text-center h-100">
+            <div class="card-body">
+              <h5 class="card-title" style="color: white;font-size:16px;">YESTERDAY BOOKINGS</h5>
+              <div class="circular-progress2">
+                <div class="value-container2">0%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="card text-center h-100">
+            <div class="card-body">
+              <h5 class="card-title" style="color: white;font-size:16px;">TOTAL BOOKINGS</h5>
+              <div class="circular-progress">
+                <div class="value-container">0%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="card text-center h-100">
+            <div class="card-body">
+              <h5 class="card-title" style="color: white;font-size:16px;">TODAY BOOKINGS</h5>
+              <div class="circular-progress1">
+                <div class="value-container1">0%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+          
+
+
+    <script>
+      let progressBar = document.querySelector(".circular-progress");
+      let valueContainer = document.querySelector(".value-container");
+
+      let progressValue =0;
+      let progressEndValue = 70;
+      let speed = 50;
+
+      let progress = setInterval(() => {
+        progressValue++;
+        valueContainer.textContent = `${progressValue}%`;
+        progressBar.style.background = `conic-gradient(
+          #4d5bf9 ${progressValue * 3.6}deg,
+          #cadcff ${progressValue * 3.6}deg
+        )`;
+        if (progressValue == progressEndValue) {
+          clearInterval(progress);
+        }
+      }, speed);
+      let progressBar1 = document.querySelector(".circular-progress1");
+      let valueContainer1 = document.querySelector(".value-container1");
+
+      let progressValue1 =0;
+      let progressEndValue1 = 30;
+      let speed1 = 50;
+
+      let progress1 = setInterval(() => {
+        progressValue1++;
+        valueContainer1.textContent = `${progressValue1}%`;
+        progressBar1.style.background = `conic-gradient(
+          #4d5bf9 ${progressValue1 * 3.6}deg,
+          #cadcff ${progressValue1 * 3.6}deg
+        )`;
+        if (progressValue1 == progressEndValue1) {
+          clearInterval(progress1);
+        }
+      }, speed1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: bottom;
+}
+               .li
+        {
+            list-style-type:none;
+            display: box;
+            display:flex;
+            text-align: center;
+            width:101.5%;
+            margin-right: 50px;
+            margin-left: -10px;
+            margin-top: -3px;
+            background-color: rgb(215, 211, 211);
+        }   
+        .set
+        {
+            font-size: medium;
+            width:100%;
+            margin:0px;
+            padding: 0px;
+            display:block;
+            overflow: hidden;
+            font-size: medium;
+            font-weight: bolder;
+            float: left;
+            padding-top: 15px; 
+            padding-bottom:15px;   
+        }
+        li:hover
+        {
+            background-color: brown;
+        }
+        .bot {
+          position: relative;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: #f1f1f1;
+          text-align: center;
+          padding: 10px;
+        }
+        .end{
+          color: white;
+          text-align: center;
+          padding-top: 30px;
+          
+      }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#" style="font-weight: bold;">Samanvay&ensp;&ensp;&ensp;&ensp;</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="userhome.jsp">&ensp;&ensp;HOME&ensp;&ensp;<span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" href="gallery1.jsp">&ensp;&ensp;GALLERY&ensp;&ensp;</a>
+                    <a class="nav-link active" href="book1.jsp">&ensp;&ensp;ROOMS&ensp;&ensp;</a>
+                    <a class="nav-link active" href="map1.jsp">&ensp;&ensp;LOCATION MAP&ensp;&ensp;</a>
+                    <a class="nav-link active" href="features1.jsp">&ensp;&ensp;HOTEL FEATURES&ensp;&ensp;</a>
+                    <a class="nav-link active" href="#">&ensp;&ensp;DINING&ensp;</a>
+                    <a class="nav-link active" href="userhome.jsp">&ensp;&ensp;MEETINGS & EVENTS&ensp;&ensp;</a>
+                    <a class="nav-link active" href="feedback1.jsp">&ensp;&ensp;RATING&ensp;&ensp;</a>
+                    <a class="nav-link active" href="contact1.jsp">&ensp;&ensp;CONTACT US&ensp;&ensp;</a>
+                    <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                </div>
+            </div>
+        </nav>    
+        <br><br><br><br>
+        <center><h1 style="font-style: italic; font-weight:bolder;"><u>Best Dining Rooms</u></h1></center><br>
+        <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-4 mb-4">
+                <div class="card text-center h-100">
+                  <img src="hot1.jpg" class="card-img-top img-fluid" style="height: 300px; width: 100%; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-4 mb-4">
+                <div class="card text-center h-100">
+                  <img src="hot2.jpg" class="card-img-top img-fluid" style="height: 300px; width: 100%; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-4 mb-4">
+                <div class="card text-center h-100">
+                  <img src="hot3.jpg" class="card-img-top img-fluid" style="height: 300px; width: 100%; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-4 mb-4">
+                <div class="card text-center h-100">
+                  <img src="hot4.jpg" class="card-img-top img-fluid" style="height: 300px; width: 100%; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-4 mb-4">
+                <div class="card text-center h-100">
+                  <img src="hot5.jpg" class="card-img-top img-fluid" style="height: 300px; width: 100%; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-4 mb-4">
+                <div class="card text-center h-100">
+                  <img src="hot6.jpg" class="card-img-top img-fluid" style="height: 300px; width: 100%; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br><br><br>
+          <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2500">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators"  data-slide-to="0" class="active">-</li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1">-</li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2">-</li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3">-</li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4">-</li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5">-</li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6">-</li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100 rounded corro" src="hot7.jpg" style="height: 80vh !important; width: 100% !important;" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 rounded corro" src="hot8.jpg" style="height: 80vh !important; width: 100% !important;" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 rounded corro" src="hot9.jpg" style="height: 80vh !important; width: 100% !important;" alt="Second slide">
+                  
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 rounded corro" src="hot10.jpg" style="height: 80vh !important; width: 100% !important;" alt="Third slide">
+                  
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 rounded corro" src="hot11.jpg" style="height: 80vh !important; width: 100% !important;"  alt="Third slide">
+                  
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 rounded corro" src="hot1.jpg" style="height: 80vh !important; width: 100% !important;" alt="Third slide">
+                  
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 rounded corro" src="hot2.jpg" height="500vh" style="height: 80vh !important; width: 100% !important;" alt="Third slide">
+                  
+                </div>
+              </div>
+              <a class="carousel-control-prev " href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="text-dark" style="font-size:50px;" aria-hidden="true">&lt</span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next " href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="text-dark" style="font-size:50px;" aria-hidden="true">&gt</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            </div>
+            <br>
+            <footer class="fixed-bottom" style="background-color: black;">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col text-center">
+                    <p style="color: white;">
+                      <a href="userhome.jsp" style="text-decoration:none; color:white;">Samanvay Boutique Hotel</a>&ensp;|&ensp;Website Terms of Use | Accessibility Information<br>
+                      &copy; 2022. Gopikanth Tirumani All rights reserved.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </footer>
+
+    </body>
+</html>

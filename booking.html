@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <title>Book a Room</title>
+    <style>
+      
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+      form {
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="date"],
+      input[type="number"],
+      input[type="month"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      }
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      }
+      input[type="submit"],
+      input[type="button"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      input[type="submit"]:hover,
+      input[type="button"]:hover {
+        background-color: #0062cc;
+      }
+      /* New CSS styles */
+      .qr {
+        background-color: #dc3545;
+        margin-left: 10px;
+      }
+      #qr-code-container {
+        margin-top: 20px;
+        text-align: center;
+      }
+      #qr-code-container img {
+        width: 200px;
+        height: 200px;
+        border: 5px solid #007bff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>Book a Room</h1>
+    
+    <form action="process_payment.php" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Name" required>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Email" required>
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+
+  <label for="checkin">Check-in Date:</label>
+  <input type="date" id="checkin" name="checkin" required>
+  <label for="checkout">Check-out Date:</label>
+  <input type="date" id="checkout" name="checkout" required>
+  <label for="room">Room Type:</label>
+  <select id="room" name="room_type" required>
+    <option value="">Select a room type</option>
+    <option value="single">Single Room</option>
+    <option value="double">Double Room</option>
+  </select>
+  <label for="guests">Number of Guests:</label>
+  <input type="number" id="guests" name="num_guests" placeholder="Number of Guests" required>
+
+  <label for="card">Credit Card:</label>
+  <input type="text" id="card" name="card_number" placeholder="Card Number">
+  <label for="expiry">Expiration:</label>
+  <input type="month" id="expiry" name="card_expiry">
+  <label for="cvv">CVV:</label>
+  <input type="text" id="cvv" name="card_cvv" placeholder="CVV">
+  <input type="button" class="qr" value="Pay with QR Code" onclick="generateQRCode()"><br><br>
+
+  <input type="submit" value="Book Now">
+
+</form><br><br>
+
+<center><div id="qr-code-container"></div></center>
+
+<script>
+  function generateQRCode() {
+    // Get the payment details from the form
+    var amount = "100"; // set a default amount
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+    var url = 'https://api.qrserver.com/v1/create-qr-code/?data=' + encodeURIComponent('amount=' + amount + '&name=' + name + '&email=' + email + '&phone=' + phone);
+    var qrCodeImg = document.createElement('img');
+    qrCodeImg.src = url;
+    document.getElementById('qr-code-container').appendChild(qrCodeImg);
+  }
+</script>
+</html> 

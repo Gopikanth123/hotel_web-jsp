@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+          .set
+          {
+              font-size: medium;
+              width:100%;
+              margin:0px;
+              padding: 0px;
+              display:block;
+              overflow: hidden;
+              font-size: medium;
+              font-weight: bolder;
+              float: left;
+              padding-top: 15vh;    
+          }
+          li:hover
+          {
+              background-color: brown;
+          }
+
+          .taj{
+
+            font-style: italic;
+            color: rgb(9, 38, 107);
+            margin-left: 100vh !important;
+            margin-bottom: -10vh !important;
+        }
+        .he{
+            font-size: 14px;
+            margin-left: 150px;
+        }
+        .leaf{
+            width:25px;
+            height:20px;
+        }
+        .tej{
+            font-style: italic;
+            color: rgb(9, 38, 107);
+            margin-left: 75vh;
+            margin-top: -17vh !important;            
+            
+        }
+        .links{
+            width:40%;
+            margin-left: 1px;
+            margin-right: 100px;
+        }
+        .box{
+            text-align: left;
+        }
+        .lux{
+            margin-left: 150px;
+            background-color: rgb(64, 54, 54);
+            width: 35%;
+            height: 750px;
+            font-size: large;
+            word-spacing:10px;
+            letter-spacing: 1px;
+        }
+    .b1{
+    border: 2px solid black;
+    margin-left:41%;
+    padding-left: 30px;
+    padding-right: 80px;
+    padding-bottom: 235px;
+    padding-top: 15px;
+   }
+   .i{
+    position: relative;
+    right:440px;
+    top:80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 50px;
+    border: 3px solid black;
+    text-align: left;
+   }
+   .container {
+    padding: 20px;
+    border-radius: 5vh;
+    background-color: #070707;
+  }
+  
+  .btn-outline-dark {
+    background-color: transparent;
+    color: #343a40;
+    border-color: #343a40;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline-dark:hover {
+    background-color: #343a40;
+    color: #f7f7f7;
+  }
+  
+  .border {
+    border-radius: 10px;
+  }
+  
+  .form-control {
+    border-radius: 20px;
+  }
+  
+  .btn-primary {
+    background-color: #343a40;
+    border-color: #343a40;
+    border-radius: 20px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #f7f7f7;
+    color: #343a40;
+  }
+  
+  .text-success {
+    color: #28a745;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+  .end{
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+input[type="month"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.qr {
+  background-color: #dc3545;
+  margin-left: 10px;
+}
+#qr-code-container {
+  margin-top: 20px;
+  text-align: center;
+}
+#qr-code-container img {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #007bff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.bot {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+}
+.end{
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  
+}
+.qr {
+  background-color: #dc3545;
+  margin-left: 10px;
+}
+#qr-code-container {
+  margin-top: 20px;
+  text-align: center;
+}
+#qr-code-container img {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #007bff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+  
+        </style>
+    </head>
+    <body style="background-color:rgb(255, 255, 255);">
+        <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#" style="font-weight: bold;">Samanvay&ensp;&ensp;&ensp;&ensp;</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="project1.html">&ensp;&ensp;HOME&ensp;&ensp;<span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" href="gallery.html">&ensp;&ensp;GALLERY&ensp;&ensp;</a>
+                    <a class="nav-link active" href="book.html">&ensp;&ensp;ROOMS&ensp;&ensp;</a>
+                    <a class="nav-link active" href="locationmap.html">&ensp;&ensp;LOCATION MAP&ensp;&ensp;</a>
+                    <a class="nav-link active" href="hotelfeatures.html">&ensp;&ensp;HOTEL FEATURES&ensp;&ensp;</a>
+                    <a class="nav-link active" href="dining.html">&ensp;&ensp;DINING&ensp;</a>
+                    <a class="nav-link active" href="project1.html">&ensp;&ensp;MEETINGS & EVENTS&ensp;&ensp;</a>
+                    <a class="nav-link active" href="feedback.html">&ensp;&ensp;FEEDBACK&ensp;&ensp;</a>
+                    <a class="nav-link active" href="contact.html">&ensp;&ensp;CONTACT US&ensp;&ensp;</a>
+                    <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                </div>
+            </div>
+        </nav>
+        <br>
+        <h1 class="taj" style="margin-left: -130vh !important;">SAMANVAY</h1><br><br>
+    <div class="he"><br>
+    <p>A Luxury Environment Friendly </p>
+    <p style="margin-top: -14px;text-decoration: overline;">Boutique Hotel  &ensp; <img src="https://www.seekpng.com/png/full/78-788239_cartoon-leaf.png" class="leaf">   UDUPI</p>
+    </div>
+    <div class="tej">
+        <h1 style="margin-bottom: -5px;margin-left:-45vh;">Samanvay Boutique Hotel</h1>
+        <i class="fa fa-map-marker" style="font-size:20px; color:lightslategray"></i>
+       <b style="color: black; font-style: normal;"> &ensp; Near Perupalem Beech, Perupalem, Moagalthur Mandal, 534281, Anadhra Pradesh<br>
+       &ensp;&ensp;&ensp; Whatsapp : 9014903646 Email :gopikanth092@gmail.com</b>
+        
+    </div>
+    <br><br>
+        <!-- <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <button type="button" class="btn btn-outline-dark btn-lg" style="color: #f7f7f7;">BOOK YOUR STAY</button>
+                <div class="border border-dark p-4 mt-4 text-center">
+                  <h4 style="color: rgb(245, 250, 248);">RESERVE YOUR STAY</h4>
+                </div>
+                <div class="mt-4">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Check in</span>
+                    </div>
+                    <input type="date" class="form-control">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Check out</span>
+                    </div>
+                    <input type="date" class="form-control">
+                  </div>
+                  <input type="text" class="form-control mb-3" placeholder="1 Room, 1 Adult, 0 Children">
+                  <button type="button" class="btn btn-primary">Reserve</button>
+                  <i class="fa fa-check-circle text-success mt-3"></i>
+                  <p class="mt-2"><b>Learn about our best rate Guarantee</b></p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <!-- <button type="button" class="btn btn-outline-dark btn-lg" style="color: #f7f7f7;">BOOK YOUR STAY</button> -->
+                <div class="border border-dark p-4 mt-4 text-center">
+                  <h4 style="color: rgb(245, 250, 248);">RESERVE YOUR STAY</h4>
+                </div><br>
+                <form>
+                  <div class="mt-4">
+                    <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                      <label for="phone">Phone Number</label>
+                      <input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Check in</span>
+                      </div>
+                      <input type="date" class="form-control">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Check out</span>
+                      </div>
+                      <input type="date" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="room-type">Room Type</label>
+                      <select class="form-control" id="room-type">
+                        <option>Single</option>
+                        <option>Double</option>
+                        <option>Triple</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="guests">Number of Guests</label>
+                      <input type="number" class="form-control" id="guests" min="1" max="10">
+                    </div>
+                    <div class="form-group">
+                      <label for="credit-card">Credit Card Number</label>
+                      <input type="text" class="form-control" id="credit-card" placeholder="Enter credit card number">
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="expiration">Expiration</label>
+                        <input type="text" class="form-control" id="expiration" placeholder="MM/YY">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="cvv">CVV</label>
+                        <input type="text" class="form-control" id="cvv" placeholder="Enter CVV">
+                      </div>
+                    </div>
+                    <!-- <div class="form-group">
+                      <label for="qr-code">Pay with QR Code</label>
+                      <input type="text" class="form-control" id="qr-code" placeholder="Enter QR code">
+                    </div> -->
+                    <input type="button" class="btn btn-primary" value="Pay with QR Code" onclick="generateQRCode()">
+                    <!-- <button type="text" class="btn btn-primary" onclick="generateQRCode()">Pay with QR Code</button> -->
+                    <button type="submit" class="btn btn-primary">Reserve</button>
+                    <i class="fa fa-check-circle text-success mt-3"></i>
+                    <p class="mt-2"><b>Learn about our best rate Guarantee</b></p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            </div>
+            <br>          
+          <!-- <form action="process_payment.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+          
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+            <label for="room">Room Type:</label>
+            <select id="room" name="room_type" required>
+              <option value="">Select a room type</option>
+              <option value="single">Single Room</option>
+              <option value="double">Double Room</option>
+            </select>
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="num_guests" placeholder="Number of Guests" required>
+          
+            <label for="card">Credit Card:</label>
+            <input type="text" id="card" name="card_number" placeholder="Card Number">
+            <label for="expiry">Expiration:</label>
+            <input type="month" id="expiry" name="card_expiry">
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="card_cvv" placeholder="CVV">
+            <input type="button" class="qr" value="Pay with QR Code" onclick="generateQRCode()"><br><br>
+          
+            <input type="submit" value="Book Now">
+          
+          </form> -->
+          <br><br>
+          
+          <center><div id="qr-code-container"></div></center>
+          
+          <br>
+          <div class="bot" style="width:100%;height:100px;background-color:black;">
+            <p class="end"><a href="file:///C:/Users/gopik/project1.html" style="text-decoration:none; color:white;">Samanvay Boutique Hotel</a>&ensp;|  Website Terms of Use | Accessibility Information<br>
+    
+                &copy 2022. Gopikanth Tirumani All rights reserved.</p>
+        </div>
+        
+    </body>
+    <script>
+      function generateQRCode() {
+        // Get the payment details from the form
+        var amount = "100"; // set a default amount
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var phone = document.getElementById('phone').value;
+        var url = 'https://api.qrserver.com/v1/create-qr-code/?data=' + encodeURIComponent('amount=' + amount + '&name=' + name + '&email=' + email + '&phone=' + phone);
+        var qrCodeImg = document.createElement('img');
+        qrCodeImg.src = url;
+        document.getElementById('qr-code-container').appendChild(qrCodeImg);
+      }
+    </script>
+</html>

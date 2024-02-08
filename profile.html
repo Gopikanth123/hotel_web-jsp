@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="styles.css">
+    <style>
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .profile {
+    text-align: center;
+  }
+  
+  .profile h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+  }
+  
+  .details {
+    margin-left: 20px;
+  }
+  
+  .details h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .details p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .bookings {
+    margin-top: 40px;
+  }
+  
+  .bookings h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .booking-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-info h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .booking-info p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .booking-actions button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .booking-actions button:hover {
+    background-color: #e60000;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .profile {
+    text-align: center;
+  }
+  
+  .profile h1 {
+    color: #333;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .details {
+    margin-left: 20px;
+  }
+  
+  .bookings {
+    margin-top: 40px;
+  }
+  
+  .bookings h2 {
+    color: #333;
+  }
+  
+  .booking-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .booking-actions button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .booking-actions button:hover {
+    background-color: #cc0000;
+  }
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  
+    .profile {
+      text-align: center;
+    }
+  
+    .profile h1 {
+      color: #333;
+    }
+  
+    .profile-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  
+    .avatar img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+  
+    .details {
+      margin-left: 20px;
+    }
+  
+    .bookings {
+      margin-top: 40px;
+    }
+  
+    .bookings h2 {
+      color: #333;
+    }
+  
+    .booking-item {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .booking-info {
+      flex: 1;
+    }
+  
+    .booking-info h3 {
+      color: #333;
+    }
+  
+    .booking-info p {
+      margin: 5px 0;
+      color: #666;
+    }
+  
+    .booking-actions button {
+      background-color: #ff0000;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+  
+    .booking-actions button:hover {
+      background-color: #cc0000;
+    }
+  
+    /* Additional CSS */
+  
+    .profile h1,
+    .bookings h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    .profile-info {
+      flex-wrap: wrap;
+    }
+  
+    .details {
+      text-align: left;
+      margin-top: 10px;
+    }
+  
+    .details h2 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+  
+    .avatar {
+      position: relative;
+      overflow: hidden;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .avatar img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  
+    .bookings {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .booking-item {
+      background-color: #f8f8f8;
+      border: 1px solid #ddd;
+    }
+  
+    .booking-actions button {
+      background-color: #ff4d4d;
+      transition: background-color 0.3s ease;
+    }
+  
+    .booking-actions button:hover {
+      background-color: #e60000;
+    }
+  
+
+/* Additional styling as needed */
+
+    </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="profile">
+      <h1>User Profile</h1>
+      <div class="profile-info">
+        <div class="avatar">
+          <img src="avatar.jpg" alt="User Avatar">
+        </div>
+        <div class="details">
+          <h2>John Doe</h2>
+          <p>Email: john.doe@example.com</p>
+          <p>Phone: +1 123 456 7890</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bookings">
+      <h2>My Bookings</h2>
+      <div class="booking-item">
+        <div class="booking-info">
+          <h3>Booking ID: 123456</h3>
+          <p>Check-in: 2023-06-01</p>
+          <p>Check-out: 2023-06-05</p>
+          <p>Room Type: Deluxe</p>
+        </div>
+        <div class="booking-actions">
+          <button class="cancel-booking">Cancel</button>
+        </div>
+      </div>
+      <div class="booking-item">
+        <div class="booking-info">
+          <h3>Booking ID: 789012</h3>
+          <p>Check-in: 2023-07-10</p>
+          <p>Check-out: 2023-07-15</p>
+          <p>Room Type: Standard</p>
+        </div>
+        <div class="booking-actions">
+          <button class="cancel-booking">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
